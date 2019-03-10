@@ -1,0 +1,82 @@
+/* Base styles */
+:root {
+  --base: #282a36;
+  --base-dark: #1d1f27;
+  --base-light: #333545;
+  --burgundy: #590016;
+  --burgundy-light: #73001c;
+  --burgundy-dark: #400010;
+  --teal: #006767;
+  --teal-light: #008181;
+  --teal-dark: #004e4e;
+  --color: #fffff8;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+.base {
+  width: 100%;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Navigation styles class=navigation */
+.navigation {
+  background: var(--base-light);
+  display: block;
+  float: right;
+  --height: 7vh;
+  height: var(--height);
+  line-height: var(--height);
+  font-size: 1.3em;
+  text-align: right;
+}
+.navigation * {
+  color: var(--color);
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* Head Hero styles 
+ * classes
+ * head-hero
+ * head-content
+ * head-title
+ * head-sub
+ * head-desc
+  */
+
+.head-hero {
+  --height: 87vh;
+  height: var(--height);
+  background: var(--burgundy-dark);
+  color: var(--color);
+}
+.head-content {
+  padding-bottom: 25vh;
+}
+
+/* About styles 
+ * classes
+ * about
+ * */
+.about {
+  --height: 87vh;
+  height: var(--height);
+  background: var(--teal-dark);
+}
