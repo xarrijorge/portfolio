@@ -69,6 +69,7 @@ h6 {
   color: var(--color);
   margin: 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Head Hero styles 
