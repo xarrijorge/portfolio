@@ -10,6 +10,9 @@
   --teal-light: #008181;
   --teal-dark: #004e4e;
   --color: #fffff8;
+  --display: "Comfortaa", cursive;
+  --sans-serif: "Montserrat", sans-serif;
+  --serif: "Trirong", serif;
 }
 html {
   font-family: sans-serif;
@@ -26,9 +29,19 @@ body {
 body * {
   margin: 0;
   padding: 0;
+  font-family: var(--sans-serif);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
 }
 .base {
   width: 100%;
+  color: var(--color);
   transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -55,28 +68,36 @@ body * {
 /* Head Hero styles 
  * classes
  * head-hero
- * head-content
- * head-title
- * head-sub
- * head-desc
+ * hero-content
+ * hero-title
+ * hero-sub
+ * hero-desc
   */
 
 .head-hero {
   --height: 87vh;
   height: var(--height);
   background: var(--burgundy-dark);
-  color: var(--color);
 }
-.head-content {
-  padding-bottom: 25vh;
+.hero-title {
+  letter-spacing: 5px;
+}
+.content {
+  width: 80%;
+  font-size: 1.3em;
 }
 
 /* About styles 
  * classes
  * about
+ * content
  * */
 .about {
   --height: 87vh;
   height: var(--height);
   background: var(--teal-dark);
+}
+.about .content {
+  font-weight: 100;
+  line-height: 40px;
 }

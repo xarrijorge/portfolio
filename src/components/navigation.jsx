@@ -1,9 +1,9 @@
+/*eslint-disable*/
 import React from 'react';
-
+import {Link, animateScroll as scroll, scrollSpy} from 'react-scroll';
 export default (props) =>(
-  <div className="base navigation">
+  <fragment className="base navigation">
     <span></span><span></span><span></span>
-    <a href="#about" onClick={props.scrollToAbout}>About</a>
-  </div>
-
+    <Link activeClass="active" to="about" smooth={true} spy={true} duration={500}>About</Link>
+  </fragment>
 )

@@ -28,8 +28,7 @@ const Layout = ({ children }) => (
       <Navagition/>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
+          © {new Date().getFullYear()}{" "}<a href="https://xarrijorge.com">xarrijorge.com</a>
         </footer>
       </>
     )}
