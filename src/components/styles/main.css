@@ -4,10 +4,10 @@
   --base-dark: #1d1f27;
   --base-light: #333545;
   --burgundy: #590016;
-  --burgundy-light: #73001c;
+  --burgundy-light: #fff6f8;
   --burgundy-dark: #400010;
   --teal: #006767;
-  --teal-light: #008181;
+  --teal-light: #ddffff;
   --teal-dark: #004e4e;
   --color: #fffff8;
   --display: "Comfortaa", cursive;
@@ -48,6 +48,11 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+.content {
+  width: 80%;
+  font-size: 1.3em;
+}
+
 /* Navigation styles class=navigation */
 .navigation {
   background: var(--base-light);
@@ -78,16 +83,42 @@ h6 {
 .head-hero {
   --height: 87vh;
   height: var(--height);
-  background: var(--burgundy-dark);
+  /* background: var(--burgundy-dark); */
+  background: linear-gradient(
+    to bottom,
+    var(--burgundy-light) 71%,
+    var(--teal-light) 100%
+  );
+  color: var(--base-dark);
 }
 .hero-title {
-  letter-spacing: 5px;
-}
-.content {
-  width: 80%;
+  display: flex;
+  align-items: center;
   font-size: 1.3em;
+  letter-spacing: 3px;
 }
 
+.hero-sub {
+  font-size: 1em;
+  color: var(--burgundy-dark);
+  line-height: 25px;
+}
+.hero-div {
+  font-size: 1.3em;
+  border-left: 2px solid var(--base);
+  height: 7vh;
+  margin: 0 10px;
+  color: var(--teal-dark);
+}
+.head-hero .content {
+  width: 60%;
+  height: 50vh;
+}
+.hero-desc {
+  text-align: justify;
+  margin-top: 2em;
+  width: 80%;
+}
 /* About styles 
  * classes
  * about
@@ -96,9 +127,12 @@ h6 {
 .about {
   --height: 87vh;
   height: var(--height);
-  background: var(--teal-dark);
+  background: var(--teal);
+  color: var(--color);
 }
 .about .content {
   font-weight: 100;
   line-height: 40px;
+  width: 60%;
+  text-align: justify;
 }
