@@ -58,6 +58,7 @@ h6 {
   line-height: var(--height);
   font-size: 1.3em;
   text-align: right;
+  font-family: var(--display);
 }
 .navigation * {
   color: var(--color);
