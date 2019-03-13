@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Xarri Jorge`,
     description: `Randy Xarri George developer portfolio`,
-    author: `@gatsbyjs`,
+    author: `@xarrijorge`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `RandyXarriGeorge`,
+        short_name: `xarrijorge`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#282a36`,
+        theme_color: `#006767`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/xarriAvatar.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
