@@ -1,7 +1,7 @@
 import React from 'react';
 
-
 export default () =>(
+  <>
   <div className="base head-hero">
     <div className="content">
       <div className="hero-title">
@@ -12,4 +12,5 @@ export default () =>(
       <p className="hero-desc">I'm creating noice web experiences for the next generation of consumer-facing companies.</p>
     </div>
   </div>
+  </>
 )
