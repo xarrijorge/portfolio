@@ -5,11 +5,13 @@ export default () =>(
   <div className="base head-hero">
     <div className="content">
       <div className="hero-title">
-        <h1>This is Xarri Jorge</h1>
-        <span className="hero-div">|</span>
+        <h1>Xarri Jorge</h1>
+        <span className="hero-div1"></span>
+        <span className="hero-div2"></span>
         <span className="hero-sub">Frontend<br/> Developer</span>
       </div>
-      <p className="hero-desc">I'm creating noice web experiences for the next generation of consumer-facing companies.</p>
+      <p className="hero-desc">Everyone deserves Beauty and Innovation<br/> 
+      ... I'm delivering just that! </p>
     </div>
   </div>
   </>
