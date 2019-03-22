@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#282a36`,
         theme_color: `#006767`,
         display: `minimal-ui`,
-        icon: `src/images/xarrilogo.png`, // This path is relative to the root of the site.
+        icon: `src/images/xarrilogocropped.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

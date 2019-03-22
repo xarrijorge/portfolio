@@ -1,4 +1,5 @@
 /* Base styles */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
 @font-face {
   font-family: "droid-serif";
   src: url("droid-Serif.woff");
@@ -26,6 +27,7 @@
   /* --display: "Comfortaa", cursive; */
   --sans-serif: "droid-sans-mono", sans-serif;
   --serif: "droid-Serif", serif;
+  --sans-serif2: "Montserrat", sans-serif;
 }
 html {
   font-family: sans-serif;
@@ -113,6 +115,9 @@ h6 {
   font-size: 1.5em;
   letter-spacing: 5px;
 }
+.head-hero .content {
+  padding-bottom: 20vh;
+}
 
 .hero-sub {
   font-size: 1em;
@@ -147,9 +152,9 @@ h6 {
 .about {
   --height: 100vh;
   height: var(--height);
-  background: var(--color);
+  background: #fdfdfd;
   color: var(--base);
-  font-family: var(--sans-serif);
+  font-family: var(--sans-serif2);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,7 +162,7 @@ h6 {
 
 .about .content {
   font-weight: 100;
-  line-height: 40px;
+  line-height: 30px;
   width: 45%;
   text-align: justify;
   justify-self: flex-start;
@@ -166,20 +171,28 @@ h6 {
   top: 8vh;
 }
 .about .content section {
-  width: 80%;
+  width: 70%;
   height: 9vh;
   background: var(--burgundy-dark);
   margin-bottom: 40px;
+  margin-left: 10%;
 }
+.about .content p {
+  padding: 0 10%;
+  font-family: var(--sans-serif2);
+}
+
 .about .graphic {
   width: 30%;
   height: 90%;
   background: var(--teal-dark);
   margin-bottom: 5%;
-  /* margin-top: auto; */
+  margin-top: auto;
 }
 .graphic img {
   width: 100%;
   height: 100%;
-  transform: translate(20%, -10%);
+  transform: translate(-10%, -7%);
+  -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(40%);
 }
