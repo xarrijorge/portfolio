@@ -118,6 +118,7 @@ footer {
   font-size: 1em;
   color: var(--burgundy-dark);
   line-height: 1;
+  font-family: var(--sans-serif2);
 }
 .hero-div1 {
   border-right: 2px solid var(--burgundy-dark);
