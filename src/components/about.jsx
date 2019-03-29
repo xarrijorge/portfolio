@@ -5,7 +5,7 @@ export default ()=>(
   <div className="base about">
       <div className="content">
         <section></section>
-        <p> I'm a freelance frontend (going on fullstack) who love what I do. I'm also a huge fantasy / sci-fi fan so if you ever want to talk Star Wars or Shonen Anime - or any other awesome outworldly topic - hit me up. I'm always looking to sharpen my skills so if you have an opensource project in mind, give me a shout as well.</p> 
+          <p>I'm a Frontend UI/UX designer. I love what I do and I especially enjoy the process of taking a project from concept to completion. Because of the love of the process, I've have experience in backend technologies like Node and Rails  and the stacks that come with them.</p> 
       </div>
       <div className="graphic">
         <img src={image} alt="Xarri standing"/>

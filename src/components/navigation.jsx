@@ -7,5 +7,7 @@ export default (props) =>(
   <div className="base navigation">
     <img src={logo}alt="logo image" className="logo"/>
     <Link activeClass="active" to="about" smooth={true} spy={true} duration={500}offset={-50}>About</Link>
+    <Link activeClass="active" to="projects" smooth={true} spy={true} duration={500}>Work</Link>
+    {/* <Link activeClass="active" to="about" smooth={true} spy={true} duration={500}>About</Link> */}
   </div>
 )

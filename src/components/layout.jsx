@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, {Fragment} from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -26,10 +26,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <Navagition/>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}{" "}<a href="https://xarrijorge.com">xarrijorge.com</a>
-        </footer>
+      <main>{children}</main>
       </>
     )}
   />

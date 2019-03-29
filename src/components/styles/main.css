@@ -29,22 +29,9 @@
   --serif: "droid-Serif", serif;
   --sans-serif2: "Montserrat", sans-serif;
 }
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body * {
-  margin: 0;
-  padding: 0;
-  font-family: var(--sans-serif);
 }
 h1,
 h2,
@@ -54,6 +41,14 @@ h5,
 h6 {
   font-family: var(--serif);
 }
+
+footer {
+  background: var(--burgundy-dark);
+  height: 6vh;
+  position: relative;
+  bottom: -5vh;
+}
+
 .base {
   width: 100%;
   color: var(--color);
