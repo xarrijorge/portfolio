@@ -69,7 +69,7 @@ footer {
 }
 
 .content {
-  width: 80%;
+  width: 100%;
   font-size: 1.3em;
   height: 100%;
 }
@@ -181,7 +181,6 @@ footer {
     line-height: 30px;
     width: 45%;
     text-align: justify;
-    justify-self: flex-start;
     position: relative;
     left: -10vw;
     top: 8vh;
@@ -194,10 +193,13 @@ footer {
       margin-left: 10%;
     }
 
-    p {
+    .textContent {
       padding: 0 10%;
       font-family: var(--sans-serif2);
+      font-size: calc(0.5em + 0.5vw);
     }
+
+
   }
 
   .graphic {
@@ -237,5 +239,49 @@ body {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: var(--teal-dark);
+  }
+}
+
+.mobileImage {
+  display: none;
+}
+
+// Media queries section below 
+
+
+
+@media only screen and (max-width:742px) {
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+}
+  /* CSS rules here */
+  .about {
+    flex-direction: column;
+    .content {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      
+      .textContent{
+        margin: 0; 
+        padding: 0 10px;
+      }
+    }
+
+    .graphic {
+      display: none;
+    }
+
+    .mobileImage {
+      display: block;
+      float: left;
+      width: 60%;
+      margin-right: 10px;
+    }
   }
 }
