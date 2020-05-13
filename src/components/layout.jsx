@@ -5,32 +5,31 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React, {Fragment} from "react"
+import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Navagition from "./navigation"
+import Navigation from "./navigation"
 import "./styles/main.scss"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-      <Navagition/>
+    }
+  `)
+
+  return (
+    <>
+      {/* <Navigation /> */}
       <main>{children}</main>
-      </>
-    )}
-  />
-)
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

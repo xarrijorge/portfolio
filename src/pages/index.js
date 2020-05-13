@@ -3,19 +3,14 @@ import React from 'react'
 
 import Layout from '../components/layout'
 // import Image from "../components/image"
-import HeadHero from '../components/headHero'
-import About from '../components/about'
+import HeadHero from '../pages/headHero'
+import About from '../pages/about'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <HeadHero />
-        <About />
-        {/* <Particles /> */}
-        <footer>
-            © {new Date().getFullYear()} <a href="#">xarrijorge.com</a>
-        </footer>
+        <HeadHero/>
     </Layout>
 )
 

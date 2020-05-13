@@ -1,15 +1,17 @@
 /*eslint-disable*/
 import React from 'react';
-import {Link, animateScroll as scroll, scrollSpy} from 'react-scroll';
+import {Link} from 'gatsby';
 import logo from '../images/xarrilogocropped.png';
 
 export default (props) =>(
   <div className="base navigation">
-    <img src={logo}alt="logo image" className="logo"/>
+    <Link to="/"><img src={logo}alt="logo image" className="logo"/></Link>
     <div>
-    <Link activeClass="active" to="about" smooth={true} spy={true} duration={500}>About</Link>
-    <Link activeClass="active" to="projects" smooth={true} spy={true} duration={500}>Work</Link>
+    <Link activeClassName="active" to="about">About</Link>
     </div>
-    {/* <Link activeClass="active" to="about" smooth={true} spy={true} duration={500}>About</Link> */}
   </div>
 )
+
+    // <Link activeClass="active" to="about">About<Link/>
+    {/* <Link activeClass="active" to="projects">Work</Link> */}
+    {/* <Link activeClass="active" to="projects" smooth={true} spy={true} duration={500}>Work</Link> */}

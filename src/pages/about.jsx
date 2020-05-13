@@ -1,8 +1,10 @@
 import React from "react"
 import image from "../images/xarriImage.jpg"
+import Layout from '../components/layout'
 
 export default () => (
-  <div className="base about">
+  <Layout>
+<div className="base about">
     <div className="content">
       <section></section>
       <div className="textContent">
@@ -13,8 +15,10 @@ export default () => (
         between.
       </div>
     </div>
-    <div className="graphic">
+    {/* <div className="graphic">
       <img src={image} alt="Xarri standing" />
-    </div>
+    </div> */}
   </div>
+  </Layout>
+  
 )
