@@ -43,7 +43,10 @@ body {
   font-family: var(--sans-serif);
   background-color: #f2f2f2;
   overflow: hidden;
-  padding: 1px;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 h1,
@@ -150,12 +153,14 @@ h6 {
 .about {
   flex-direction: column;
   height: 100vh;
+  // justify-content: center;
   font-family: var(--sans-serif2);
-  padding: 20px;
+  padding: 20px 0;
 
   p {
     width: 60%;
     text-align: justify;
+    font-size: calc(0.5em + 2vw);
   }
 
   img {
@@ -199,5 +204,11 @@ h6 {
     width: 50%;
     padding: 0 10px;
 
+  }
+
+  .about {
+    p {
+      width: 80%;
+    }
   }
 }
