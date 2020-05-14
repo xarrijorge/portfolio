@@ -12,6 +12,7 @@ export default () =>(
       <div className="mainNav">
         <Link className="navButton neo-white" to="about">About</Link>
         <Link className="navButton neo-white" to="work">Work</Link>
+        <Link className="navButton neo-white" to="contact">Contact</Link>
         <Link className="navButton neo-white" to="learn">learn</Link>
       </div>
       {/* <div className="hero-desc">Everyone deserves Beauty and Innovation<br/> 
