@@ -1,34 +1,13 @@
 import React from 'react'
 import image from '../images/porygonPic.png'
 import Layout from '../components/layout'
+import Social from '../components/social'
 
 export default () => (
     <Layout>
         <div className="base about">
             <img src={image} alt="Xarri Smiling" className="aboutPic" />
-            <div className="socialbox">
-                <a
-                    href="https://github.com/xarrijorge"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <i className="fa fa-github" />
-                </a>
-                <a
-                    href="https://twitter.com/xarrijorge"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <i className="fa fa-twitter" />
-                </a>
-                <a
-                    href="https://codepen.io/algorithm"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <i className="fa fa-codepen" />
-                </a>
-            </div>
+            <Social />
             <p>
                 I'm a Javascript developer living in Monrovia, Liberia. I love
                 what I do and I especially enjoy the process of taking a design
