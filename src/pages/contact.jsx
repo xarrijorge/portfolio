@@ -8,7 +8,7 @@ export default () => (
             projects ideas, work, business, open source collaborations,
             anything.
         </h2>
-        <form name="contact" netlify>
+        <form name="contact" method="post" netlify>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <textarea cols="30" rows="10" placeholder="Message"></textarea>
