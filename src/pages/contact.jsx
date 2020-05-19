@@ -12,7 +12,9 @@ export default () => (
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <textarea cols="30" rows="10" placeholder="Message"></textarea>
-            <button className="neo-white">Send</button>
+            <button className="neo-white" type="submit">
+                Send
+            </button>
         </form>
     </div>
 )
