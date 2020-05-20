@@ -8,17 +8,17 @@ export default () => (
         <div className="base about">
             <img src={image} alt="Xarri Smiling" className="aboutPic" />
             <Social />
-            <p>
+            <h2 className="text">
                 I'm a Javascript developer living in Monrovia, Liberia. I love
                 what I do and I especially enjoy the process of taking a design
                 project and coding it from concept to completion. I'm a Geek,
                 Nerd and everything in between.{' '}
-            </p>{' '}
-            <p>
+            </h2>{' '}
+            <h2 className="text">
                 I love Star Wars, Anime, Rowlin and Tolkien. I aslo enjoy
                 watcing and playing Football - go Gooners - and I enoy video
                 games as well.
-            </p>
+            </h2>
         </div>
     </Layout>
 )
