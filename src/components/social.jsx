@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaTwitter, FaCodepen } from 'react-icons/fa'
 
 export default () => (
     <div className="social">
@@ -7,21 +8,21 @@ export default () => (
             rel="noopener noreferrer"
             target="_blank"
         >
-            <i className="fa fa-github" />
+            <FaGithub className="fa" />
         </a>
         <a
             href="https://twitter.com/xarrijorge"
             rel="noopener noreferrer"
             target="_blank"
         >
-            <i className="fa fa-twitter" />
+            <FaTwitter className="fa" />
         </a>
         <a
             href="https://codepen.io/algorithm"
             rel="noopener noreferrer"
             target="_blank"
         >
-            <i className="fa fa-codepen" />
+            <FaCodepen className="fa" />
         </a>
     </div>
 )

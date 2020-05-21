@@ -201,7 +201,8 @@ h6 {
         max-height: 100%;
         margin-right: 50%;
         border-radius: 20px;
-        box-shadow: 8px 8px 18px var(--color-shadow), -8px -8px 19px var(--color-white);
+        box-shadow: 8px 8px 18px var(--color-shadow),
+            -8px -8px 19px var(--color-white);
         animation: shine 1s infinite ease-in-out;
     }
 
@@ -214,7 +215,6 @@ h6 {
         70% {
             // box-shadow: 8px 8px 18px var(--burgundy), -8px -8px 19px var(--teal);
             filter: brightness(100%);
-
         }
 
         100% {
@@ -222,8 +222,6 @@ h6 {
             filter: grayscale(100%);
         }
     }
-
-
 
     form {
         width: 90%;
@@ -321,9 +319,9 @@ h6 {
     text-align: center;
 
     .fa {
-        font-size: 20px;
+        font-size: 30px;
         color: var(--teal);
-        padding: 0 10px;
+        margin: 0 10px;
 
         &:hover {
             color: var(--burgundy);
@@ -348,7 +346,6 @@ h6 {
 // Media queries section below
 
 @media only screen and (max-width: 1050px) {
-
     /* CSS rules here */
     .mainNav {
         overflow-y: scroll;
@@ -371,15 +368,11 @@ h6 {
                 width: auto;
                 height: 10vh;
             }
-
-
-
         }
 
         svg {
             margin: auto;
         }
-
     }
 
     textarea {
