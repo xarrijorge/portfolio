@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Brightness4Sharp, Brightness7Sharp } from '@mui/icons-material'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [darkmode, setDarkMode] = useState(false)
+
+    const toggleTheme = () => {
+        setDarkMode(!darkmode)
+    }
+    return (
+        <div className={`App ${darkmode ? 'dark-mode' : 'light-mode'} `}>
+            <button onClick={toggleTheme} className='themeSwitchButton'>
+                {darkmode ? (
+                    <Brightness7Sharp sx={{ color: '#f5f5f5' }} />
+                ) : (
+                    <Brightness4Sharp />
+                )}
+            </button>
+            <h1>Xarri George</h1>
+            <h4>Tranquil Simplicity, Rustic Elegance, Imperfect Beauty</h4>
+        </div>
+    )
 }
 
-export default App;
+export default App
