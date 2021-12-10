@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Brightness4Sharp, Brightness7Sharp } from '@mui/icons-material'
+import HeadHero from './pages/HeadHero'
 import './App.css'
 
 function App() {
-    const [darkmode, setDarkMode] = useState(false)
+    const [darkmode, setDarkMode] = useState(true)
 
     const toggleTheme = () => {
         setDarkMode(!darkmode)
@@ -17,8 +18,8 @@ function App() {
                     <Brightness4Sharp />
                 )}
             </button>
-            <h1>Xarri George</h1>
-            <h4>Tranquil Simplicity, Rustic Elegance, Imperfect Beauty</h4>
+
+            <HeadHero />
         </div>
     )
 }

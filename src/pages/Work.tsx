@@ -10,9 +10,9 @@ const Work = () => (
                 dolor. Id eu anim culpa minim tempor. Elit tempor excepteur enim
                 ut.
             </p>
-            <a href='' className='projectLink'>
+            {/* <a href='' className='projectLink'>
                 <img src='https://dummyimage.com/300x300.png' alt='' />
-            </a>
+            </a> */}
         </div>
     </div>
 )

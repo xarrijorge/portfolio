@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaGithub, FaTwitter, FaCodepen } from 'react-icons/fa'
 
 const Social = () => (
     <div className='social'>
@@ -7,19 +6,19 @@ const Social = () => (
             href='https://github.com/xarrijorge'
             rel='noopener noreferrer'
             target='_blank'>
-            <FaGithub className='fa' />
+            {/* <FaGithub className='fa' /> */}
         </a>
         <a
             href='https://twitter.com/xarrijorge'
             rel='noopener noreferrer'
             target='_blank'>
-            <FaTwitter className='fa' />
+            {/* <FaTwitter className='fa' /> */}
         </a>
         <a
             href='https://codepen.io/algorithm'
             rel='noopener noreferrer'
             target='_blank'>
-            <FaCodepen className='fa' />
+            {/* <FaCodepen className='fa' /> */}
         </a>
     </div>
 )
