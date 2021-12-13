@@ -1,12 +1,15 @@
-import React from 'react'
-import logo from '../images/xarrilogocropped.png'
+import MovingBorderButton from '../components/MovingBorderButton'
 
 const HeadHero = (): JSX.Element => {
     return (
-        <div className='base head-hero'>
-            <img className='homeImage' src={logo} alt='xarri logo' />
+        <div className="homepage">
+            {/* <img className='homeImage' src={logo} alt='xarri logo' /> */}
             <h1>Xarri George</h1>
-            <h4>Tranquil Simplicity, Rustic Elegance, Imperfect Beauty</h4>
+            <div className="homeNavWrapper">
+                <MovingBorderButton label="About" />
+                <MovingBorderButton label="Work" />
+            </div>
+            {/* <h4>Tranquil Simplicity, Rustic Elegance, Imperfect Beauty</h4> */}
         </div>
     )
 }
