@@ -1,5 +1,5 @@
 @import './styles/palette';
-
+@import './styles/home';
 html * {
     box-sizing: border-box;
     margin: 0;
@@ -16,15 +16,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     font-size: calc(10px + 2vmin);
     text-align: center;
-    padding: 10vh 0;
     overflow: hidden;
 }
 
 .light-mode {
-    background-color: #f5f5f5;
+    background-color: $burgundy-light;
     color: $primary-text-color;
     .highlight {
         color: $accent-color;
@@ -66,54 +64,6 @@ a {
 
 .light-mode .homeNavLink {
     color: #20242b;
-}
-.homepage {
-    width: 100vw;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .homeNav {
-        margin: 100px 0;
-        display: flex;
-        justify-content: space-between;
-        width: 850px;
-
-        .homeLink {
-            margin: 20px 60px;
-            font-family: Gotham, Tahoma, sans-serif;
-            font-weight: 900;
-            letter-spacing: 1px;
-            transition: color 0.75s ease-in-out;
-            text-transform: uppercase;
-            position: relative;
-            border-style: solid;
-            border-width: 4px;
-            -moz-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            -webkit-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            -o-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-        }
-
-        .homeLink:hover {
-            color: #333;
-            transition: color 0.75s ease-in-out;
-            -webkit-user-select: none;
-            -webkit-touch-callout: none;
-        }
-    }
-    .description {
-        width: 500px;
-    }
-
-    .mySubText {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-    }
 }
 
 /* Mobile styles for devices 720px and below */
