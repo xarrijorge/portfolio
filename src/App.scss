@@ -72,15 +72,4 @@ a {
     .App {
         width: 100%;
     }
-    .homepage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        .homeNavWrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
 }
