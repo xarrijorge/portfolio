@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { Brightness4Sharp, Brightness7Sharp } from '@mui/icons-material'
 import Home from './pages/Home'
 import About from './pages/About'
-import './App.css'
+import './App.scss'
 
 function App() {
     const [darkmode, setDarkMode] = useState(true)
@@ -12,7 +12,7 @@ function App() {
         setDarkMode(!darkmode)
     }
     return (
-        <div className={`App ${darkmode ? 'dark-mode' : 'light-mode'} `}>
+        <main className={`App ${darkmode ? 'dark-mode' : 'light-mode'} `}>
             <button onClick={toggleTheme} className="themeSwitchButton">
                 {darkmode ? (
                     <Brightness7Sharp sx={{ color: '#f5f5f5' }} />
@@ -20,10 +20,11 @@ function App() {
                     <Brightness4Sharp />
                 )}
             </button>
-
-            <Home />
-            <About />
-        </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </main>
     )
 }
 
