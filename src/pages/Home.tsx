@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../styles/newLogoDraft.png'
 
 const Homepage = (): JSX.Element => {
     return (
