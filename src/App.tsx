@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import { Brightness4Sharp, Brightness7Sharp } from '@mui/icons-material'
 import Home from './pages/Home'
 import About from './pages/About'
+import Work from './pages/Work'
+import NotFound from './pages/NotFound'
 import './App.scss'
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/about" element={<Work />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
         </main>
     )

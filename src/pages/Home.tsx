@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 
 const Homepage = (): JSX.Element => {
     return (
@@ -17,11 +17,17 @@ const Homepage = (): JSX.Element => {
             </div>
             <div className="homeNav">
                 <p>Learn more</p>
-                <Link to="./about">
+                <Link
+                    to="./about"
+                    className={(isActive) => (isActive ? 'active' : '')}
+                >
                     <span className="homeLink">About Me</span>
                 </Link>
                 <p>and see examples of</p>
-                <Link to="/work">
+                <Link
+                    to="/work"
+                    className={(isActive) => (isActive ? 'active' : '')}
+                >
                     <span className="homeLink">My Work</span>
                 </Link>
             </div>

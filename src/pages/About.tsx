@@ -1,11 +1,9 @@
-import image from '../images/porygonPic.png'
 import Layout from '../components/layout'
 import Social from '../components/Social'
 
 const About = () => (
     <Layout>
         <div className="base about">
-            <img src={image} alt="Xarri Smiling" className="aboutPic" />
             <Social />
             <h2 className="text">
                 I'm a Javascript developer living in Monrovia, Liberia. I love

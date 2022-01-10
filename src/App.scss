@@ -6,7 +6,7 @@ html * {
     padding: 0;
     box-shadow: none;
     outline: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 a {
     text-decoration: none;
@@ -22,6 +22,7 @@ a {
 }
 
 .light-mode {
+    position: relative;
     background-color: $burgundy-light;
     color: $primary-text-color;
     .highlight {
@@ -30,6 +31,12 @@ a {
     .homeLink {
         border-color: $burgundy;
         color: $primary-text-color;
+        &:before {
+            background-color: $burgundy;
+        }
+        &:hover {
+            color: $burgundy-light;
+        }
     }
 }
 .dark-mode {
@@ -41,6 +48,9 @@ a {
     .homeLink {
         border-color: $primary-color;
         color: $burgundy-light;
+        &:before {
+            background-color: $primary-color;
+        }
     }
 }
 
