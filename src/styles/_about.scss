@@ -1,0 +1,45 @@
+.about {
+    padding: 5% 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        width: 65%;
+        height: 30vh;
+        font-size: 2.5em;
+        // overflow: hidden;
+        display: flex;
+        h1 {
+            z-index: 2;
+        }
+        img {
+            height: 3em;
+            width: 3em;
+            max-width: 100%;
+            float: left;
+            margin: 0 -1em;
+            // margin-left: auto;
+            border-radius: 20px;
+            z-index: 1;
+        }
+    }
+    .details {
+        display: grid;
+        grid-template-columns: 40% 10% 1fr;
+        width: 60%;
+        align-items: flex-start;
+        text-align: justify;
+        .col1 {
+            text-align: left;
+        }
+        .col3 {
+            flex-grow: 0;
+            font-size: 15px;
+        }
+        .hobbies {
+            margin-top: 10px;
+        }
+    }
+}

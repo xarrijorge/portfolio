@@ -1,5 +1,6 @@
 @import './styles/palette';
 @import './styles/home';
+@import './styles/about';
 html * {
     box-sizing: border-box;
     margin: 0;
@@ -30,7 +31,7 @@ a {
     }
     .homeLink {
         border-color: $burgundy;
-        color: $primary-text-color;
+        color: $dark-color;
         &:before {
             background-color: $burgundy;
         }
@@ -40,7 +41,7 @@ a {
     }
 }
 .dark-mode {
-    background: $base-dark;
+    background: $dark-color;
     color: $burgundy-light;
     .highlight {
         color: $primary-color;
