@@ -13,16 +13,29 @@
         display: flex;
         h1 {
             z-index: 2;
+            mix-blend-mode: difference;
         }
         img {
+            position: relative;
             height: 3em;
             width: 3em;
             max-width: 100%;
             float: left;
             margin: 0 -1em;
             // margin-left: auto;
-            border-radius: 20px;
+            border-radius: 10px;
             z-index: 1;
+            filter: grayscale(50%);
+            & ~ span {
+                position: relative;
+                right: 12%;
+                top: -15px;
+                width: 3em;
+                height: 3em;
+                border: 2px solid whitesmoke;
+                transform: translate(5px, 5px);
+                border-radius: 10px;
+            }
         }
     }
     .details {
@@ -33,6 +46,10 @@
         text-align: justify;
         .col1 {
             text-align: left;
+            a.email {
+                font-size: 15px;
+                color: $accent-color;
+            }
         }
         .col3 {
             flex-grow: 0;
@@ -40,6 +57,22 @@
         }
         .hobbies {
             margin-top: 10px;
+        }
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        margin-top: 10px;
+        a {
+            margin-right: 10px;
+            color: $teal-dark;
+        }
+        hr {
+            position: relative;
+            transform-origin: top left;
+            transform: rotate(90deg);
+            left: 15px;
         }
     }
 }

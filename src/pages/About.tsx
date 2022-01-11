@@ -1,13 +1,19 @@
 import image from '../images/xarri.jpg'
+import Social from '../components/Social'
 const About = () => (
     <div className="about">
         <div className="title">
             <h1>About Me</h1>
             <img src={image} alt="" />
+            <span></span>
         </div>
         <div className="details">
             <div className="col1">
-                <h3>I'm Xarri George. A Developer, maker and problem solver</h3>
+                <h4>I'm Xarri George. A Developer, maker and problem solver</h4>
+                <a href="mailto: kodinglife@gmail.com" className="email">
+                    hello@xarrijorge.com
+                </a>
+                <Social />
             </div>
             <div className="col2"></div>
             <div className="col3">

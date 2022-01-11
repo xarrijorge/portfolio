@@ -1,4 +1,4 @@
-import React from 'react'
+import { RiTwitterLine, RiGithubLine, RiCodepenLine } from 'react-icons/ri'
 
 const Social = () => (
     <div className="social">
@@ -7,29 +7,23 @@ const Social = () => (
             rel="noopener noreferrer"
             target="_blank"
         >
-            {/* <FaGithub className='fa' /> */}
+            <RiGithubLine ri-2x />
         </a>
         <a
             href="https://twitter.com/xarrijorge"
             rel="noopener noreferrer"
             target="_blank"
         >
-            {/* <FaTwitter className='fa' /> */}
+            <RiTwitterLine ri-2x />
         </a>
         <a
             href="https://codepen.io/algorithm"
             rel="noopener noreferrer"
             target="_blank"
         >
-            {/* <FaCodepen className='fa' /> */}
-        </a>{' '}
-        <a
-            href="https://codepen.io/algorithm"
-            rel="noopener noreferrer"
-            target="_blank"
-        >
-            {/* <FaCodepen className='fa' /> */}
+            <RiCodepenLine ri-2x />
         </a>
+        <hr />
     </div>
 )
 
