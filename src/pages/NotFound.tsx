@@ -1,3 +1,4 @@
+import React from 'react'
 // import SEO from '../components/seo'
 import Shapes from '../components/Shapes'
 import { Link } from 'react-router-dom'
