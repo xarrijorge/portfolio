@@ -4,8 +4,7 @@ const About = () => (
     <div className="about">
         <div className="title">
             <h1>About Me</h1>
-            <img src={image} alt="" />
-            <span></span>
+            <div className="image"></div>
         </div>
         <div className="details">
             <div className="col1">
@@ -28,16 +27,9 @@ const About = () => (
                     I'm a Geek, Nerd and everything in between. I love Star
                     Wars, Anime, Rowlin and Tolkien.
                 </p>
-                {/* 
-                <p>
-                     I have experience in building websites and
-                    web applications. I'm currently looking for a position in
-                    the web development industry. I also have experience in
-                    Network infrastructure and agent management and technical
-                    support.
-                </p> */}
             </div>
         </div>
+        <div className="skills"></div>
     </div>
 )
 
