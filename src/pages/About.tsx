@@ -1,4 +1,6 @@
-import image from '../images/xarri.jpg'
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React from 'react'
+// import image from '../images/xarri.jpg'
 import Social from '../components/Social'
 const About = () => (
     <div className="about">

@@ -77,13 +77,6 @@
             margin-right: 10px;
             color: $teal-dark;
         }
-        hr {
-            position: relative;
-            transform-origin: top left;
-            width: 200px;
-            transform: rotate(90deg);
-            left: 15px;
-        }
     }
     @media screen and (max-width: 720px) {
         hr,

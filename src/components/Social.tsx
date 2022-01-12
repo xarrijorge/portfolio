@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React from 'react'
 import { RiTwitterLine, RiGithubLine, RiCodepenLine } from 'react-icons/ri'
 
 const Social = () => (
@@ -23,7 +25,6 @@ const Social = () => (
         >
             <RiCodepenLine ri-2x />
         </a>
-        <hr />
     </div>
 )
 
