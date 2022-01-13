@@ -2,7 +2,7 @@
 import React from 'react'
 import { RiTwitterLine, RiGithubLine, RiCodepenLine } from 'react-icons/ri'
 
-const Social = () => (
+const Social = (): JSX.Element => (
     <div className="social">
         <a
             href="https://github.com/xarrijorge"

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Shapes = () => (
+const Shapes = (): JSX.Element => (
     <svg
         width="380px"
         height="500px"

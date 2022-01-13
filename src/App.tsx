@@ -7,7 +7,7 @@ import Work from './pages/Work'
 import NotFound from './pages/NotFound'
 import './App.scss'
 
-function App() {
+function App(): JSX.Element {
     const [darkmode, setDarkMode] = useState(true)
 
     const toggleTheme = () => {

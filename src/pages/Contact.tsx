@@ -2,7 +2,7 @@ import React from 'react'
 // import Social from '../components/social'
 import graphic from '../images/contactGraph2.jpg'
 
-const Contact = () => (
+const Contact = (): JSX.Element => (
     <div className="contactPage">
         <img src={graphic} alt="" />
         <form name="contact" method="post" data-netlify="true">

@@ -3,7 +3,7 @@ import React from 'react'
 import Shapes from '../components/Shapes'
 import { Link } from 'react-router-dom'
 
-const NotFoundPage = () => (
+const NotFoundPage = (): JSX.Element => (
     <div className="missing">
         {/* <SEO title="404: Not found" /> */}
         <Shapes />

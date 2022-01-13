@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Work = () => (
+const Work = (): JSX.Element => (
     <div>
         <h5>Working some awesome projects but till those are done</h5>
-        <div className='projectDesc'>
+        <div className="projectDesc">
             <p>
                 Proident ad reprehenderit reprehenderit ad in. Ut commodo non
                 commodo nulla est veniam aute Lorem. Sint in laborum laboris
