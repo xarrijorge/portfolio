@@ -1,6 +1,9 @@
 @import './styles/palette';
 @import './styles/home';
 @import './styles/about';
+@import './styles/work';
+@import './styles/navigation';
+
 html * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +14,9 @@ html * {
 }
 a {
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
 }
 .App {
     min-height: 100vh;
@@ -29,15 +35,13 @@ a {
     .highlight {
         color: $accent-color;
     }
-    .homeLink {
-        border-color: $burgundy;
+    .homeLink,
+    .contactLink,
+    .variableLink {
         color: $dark-color;
-        &:before {
-            background-color: $burgundy;
-        }
-        &:hover {
-            color: $burgundy-light;
-        }
+    }
+    .navArrow {
+        color: $accent-color;
     }
 }
 .dark-mode {
@@ -46,12 +50,13 @@ a {
     .highlight {
         color: $primary-color;
     }
-    .homeLink {
-        border-color: $primary-color;
+    .homeLink,
+    .contactLink,
+    .variableLink {
         color: $burgundy-light;
-        &:before {
-            background-color: $primary-color;
-        }
+    }
+    .navArrow {
+        color: $primary-color;
     }
 }
 

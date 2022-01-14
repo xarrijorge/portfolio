@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
-// import image from '../images/xarri.jpg'
 import Social from '../components/Social'
+
 const About = (): JSX.Element => (
     <div className="about">
         <div className="title">

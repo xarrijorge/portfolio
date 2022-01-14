@@ -1,0 +1,33 @@
+.navMenu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    & > * {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        font-size: 1rem;
+        text-orientation: sideways;
+    }
+    .homeLink {
+        top: 0;
+        left: 5%;
+    }
+    .contactLink {
+        top: 80%;
+        left: 85%;
+    }
+    .variableLink {
+        top: 80%;
+        left: 5%;
+    }
+}
+.navArrow {
+    margin: 0;
+    padding: 0;
+    font-size: min(80px, 8em);
+    & > path {
+        stroke-width: 10;
+    }
+}

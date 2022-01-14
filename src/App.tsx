@@ -25,7 +25,7 @@ function App(): JSX.Element {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/about" element={<Work />} />
+                <Route path="/work" element={<Work />} />
                 <Route path="/*" element={<NotFound />} />
             </Routes>
         </main>
