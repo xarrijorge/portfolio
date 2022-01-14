@@ -1,4 +1,13 @@
-@import url('//db.onlinewebfonts.com/c/0fddb08144cea533dcd3d39388b7ffbe?family=GrandSlang+Roman');
+@font-face {
+    font-family: 'GrandSlang Roman';
+    src: url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.eot'),
+        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff2') format('woff2'),
+        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.woff') format('woff'),
+        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.ttf') format('truetype'),
+        url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.svg#GrandSlang Roman')
+            format('svg');
+}
+
 body {
     margin: 0;
     /* font-family: 'Raleway', sans-serif; */
@@ -13,8 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Grandslang roman', sans-serif;
+    font-family: 'Grandslang Roman', sans-serif;
     letter-spacing: 4px;
 }
 code {

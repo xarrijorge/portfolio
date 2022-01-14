@@ -6,6 +6,7 @@ const About = (): JSX.Element => (
     <div className="about">
         <div className="title">
             <h1 className="mainTitle">About Me</h1>
+            {/* <div className="image"></div> */}
             <h4 className="subTitle">
                 I'm Xarri George. A Developer, maker and problem solver
                 <p>
@@ -15,7 +16,6 @@ const About = (): JSX.Element => (
                 </p>
                 <Social />
             </h4>{' '}
-            {/* <div className="image"></div> */}
         </div>
         <div className="details">
             <p className="bio">
