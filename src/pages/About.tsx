@@ -5,7 +5,7 @@ import Social from '../components/Social'
 const About = (): JSX.Element => (
     <div className="about">
         <div className="title">
-            <h1 className="mainTitle">About Me</h1>
+            <h1 className="mainTitle">AbOut Me</h1>
             {/* <div className="image"></div> */}
             <h4 className="subTitle">
                 I'm Xarri George. A Developer, maker and problem solver
