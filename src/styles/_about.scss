@@ -14,7 +14,7 @@
         }
         .mainTitle {
             z-index: 2;
-            font-size: 14vmin;
+            font-size: clamp(16px, 14vmin, 5rem);
         }
         .subTitle {
             font-size: 4vmin;
@@ -28,7 +28,7 @@
                 }
             }
             .social a {
-                font-size: 1em;
+                font-size: max(2vmin);
                 &:hover {
                     color: $accent-color;
                 }

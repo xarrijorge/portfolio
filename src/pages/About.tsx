@@ -15,7 +15,7 @@ const About = (): JSX.Element => (
                     </a>
                 </p>
                 <Social />
-            </h4>{' '}
+            </h4>
         </div>
         <div className="details">
             <p className="bio">
