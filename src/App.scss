@@ -35,11 +35,22 @@ a {
     .highlight {
         color: $accent-color;
     }
-    .homeLink,
+    .homeLink {
+        border-color: $burgundy;
+        color: $dark-color;
+        &:before {
+            background-color: $burgundy;
+        }
+        &:hover {
+            color: $burgundy-light;
+        }
+    }
+    .menuHomeLink,
     .contactLink,
     .variableLink {
         color: $dark-color;
     }
+
     .navArrow {
         color: $accent-color;
     }
@@ -50,7 +61,14 @@ a {
     .highlight {
         color: $primary-color;
     }
-    .homeLink,
+    .homeLink {
+        border-color: $primary-color;
+        color: $burgundy-light;
+        &:before {
+            background-color: $primary-color;
+        }
+    }
+    .menuHomeLink,
     .contactLink,
     .variableLink {
         color: $burgundy-light;
