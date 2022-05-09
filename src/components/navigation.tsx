@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import {
-    IoReturnDownBackSharp,
-    IoReturnDownForwardSharp,
-} from 'react-icons/io5'
+import { MdHomeFilled } from 'react-icons/md'
+import { GrContact } from 'react-icons/gr'
 
 const Navigation = (): JSX.Element => {
     const location = useLocation()
@@ -12,15 +10,15 @@ const Navigation = (): JSX.Element => {
     return (
         <div className="navMenu">
             <Link to="/" className="homeLink">
-                <IoReturnDownBackSharp className="navArrow "></IoReturnDownBackSharp>
+                <MdHomeFilled className="navArrow "></MdHomeFilled>
                 <span>home</span>
             </Link>
             <Link to="/contact" className="contactLink">
                 <span>contact</span>
-                <IoReturnDownForwardSharp className="navArrow "></IoReturnDownForwardSharp>
+                <GrContact className="navArrow "></GrContact>
             </Link>
             <Link to={locationStr} className="variableLink">
-                <IoReturnDownBackSharp className="navArrow "></IoReturnDownBackSharp>
+                <GrContact className="navArrow "></GrContact>
                 <span>{routeName === 'about' ? 'work' : 'about'}</span>
             </Link>
         </div>
