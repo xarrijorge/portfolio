@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    font-size: 16px;
     .title {
         width: 70%;
         text-align: left;
@@ -15,12 +16,14 @@
         .mainTitle {
             z-index: 2;
             font-size: clamp(36px, 14vmin, 8rem);
+            font-weight: thin;
         }
         .subTitle {
-            font-size: 16px;
+            font-size: 26px;
             transition: none;
-            width: 60%;
-            // width: 60%;
+            line-height: 2em;
+            width: 80%;
+            margin: 2em 0;
             a.email {
                 color: $accent-color;
                 font-size: small;
@@ -36,17 +39,19 @@
             }
         }
         .image {
-            aspect-ratio: 0.6663984375;
+            // aspect-ratio: 0.6663984375;
+            // aspect-ratio: 2.2222;
             position: relative;
-            $height: 4em;
+            $height: 15em;
             height: $height;
-            max-width: 100%;
-            margin: 0 -1em;
+            width: 600px;
             border-radius: 10px;
+            text-align: right;
             z-index: 1;
-            filter: grayscale(70%);
+            // filter: grayscale(70%);
             background-image: url('../images/xarri.jpg');
             background-size: contain;
+            background-repeat: no-repeat;
             &:before {
                 content: '';
                 position: absolute;
@@ -65,13 +70,20 @@
         }
     }
     .details {
-        width: 40%;
+        width: 80%;
         margin-left: 0;
         align-items: flex-start;
-        margin-left: auto;
         text-align: justify;
         font-size: 2vmin;
+        p{
         line-height: 1.9em;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        span{
+            font-family: cursive;
+            text-transform: uppercase;
+        }
         .hobbies {
             margin-top: 10px;
         }

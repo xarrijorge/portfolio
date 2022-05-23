@@ -79,18 +79,19 @@ a {
 }
 
 .themeSwitchButton {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     border: none;
     position: fixed;
     top: 0;
     right: 0;
-    margin: 5px;
+    margin: 25px;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .themeSwitchButton:hover {
     cursor: pointer;

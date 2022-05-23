@@ -10,15 +10,12 @@ const Navigation = (): JSX.Element => {
     return (
         <div className="navMenu">
             <Link to="/" className="homeLink">
-                <MdHomeFilled className="navArrow "></MdHomeFilled>
-                <span>home</span>
+                <MdHomeFilled className="navIcons" />
             </Link>
             <Link to="/contact" className="contactLink">
-                <span>contact</span>
-                <GrContact className="navArrow "></GrContact>
+                <GrContact className="navIcons" />
             </Link>
             <Link to={locationStr} className="variableLink">
-                <GrContact className="navArrow "></GrContact>
                 <span>{routeName === 'about' ? 'work' : 'about'}</span>
             </Link>
         </div>

@@ -17,9 +17,20 @@ function App(): JSX.Element {
         <main className={`App ${darkmode ? 'dark-mode' : 'light-mode'} `}>
             <button onClick={toggleTheme} className="themeSwitchButton">
                 {darkmode ? (
-                    <Brightness7Sharp sx={{ color: '#f5f5f5' }} />
+                    <Brightness7Sharp
+                        sx={{
+                            fontSize: '80px',
+                            cursor: 'pointer',
+                        }}
+                    />
                 ) : (
-                    <Brightness4Sharp />
+                    <Brightness4Sharp
+                        sx={{
+                            color: '#f5f5f5',
+                            fontSize: '80px',
+                            cursor: 'pointer',
+                        }}
+                    />
                 )}
             </button>
             <Routes>
