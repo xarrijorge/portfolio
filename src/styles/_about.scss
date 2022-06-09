@@ -18,26 +18,6 @@
             font-size: clamp(36px, 14vmin, 8rem);
             font-weight: thin;
         }
-        .subTitle {
-            font-size: 26px;
-            transition: none;
-            line-height: 2em;
-            width: 80%;
-            margin: 2em 0;
-            a.email {
-                color: $accent-color;
-                font-size: small;
-                &:hover {
-                    text-decoration: line-through;
-                }
-            }
-            .social a {
-                font-size: max(4vmin, 20px);
-                &:hover {
-                    color: $accent-color;
-                }
-            }
-        }
         .image {
             // aspect-ratio: 0.6663984375;
             // aspect-ratio: 2.2222;
@@ -69,23 +49,61 @@
             }
         }
     }
+    .highlight {
+        font-size: 26px;
+        transition: none;
+        line-height: 1.2em;
+        font-weight: 100;
+        width: 80%;
+        margin: 2em 0;
+        a.email {
+            color: $accent-color;
+            font-size: small;
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+        .social a {
+            font-size: max(4vmin, 20px);
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
     .details {
         width: 80%;
         margin-left: 0;
         align-items: flex-start;
-        text-align: justify;
         font-size: 2vmin;
-        p{
-        line-height: 1.9em;
+        p {
+            line-height: 1.9em;
             margin: 20px 0;
             font-size: 18px;
+            text-align: justify;
         }
-        span{
+        .primaryskill {
             font-family: cursive;
-            text-transform: uppercase;
+            margin: 0 5px;
+        }
+        .skills {
+            font-size: 18px;
+
+            .primaryskill {
+                display: inline;
+                font-size: 1.5em;
+            }
+            .highlight {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .skillsets {
+                margin-bottom: 50px;
+            }
         }
         .hobbies {
             margin-top: 10px;
+            font-family: 'Grandslam Roman', sans-serif;
         }
     }
     .social {
