@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink as Link } from 'react-router-dom'
+import Image from '../images/IMG-20200705-WA0016.png'
 
 const Homepage = (): JSX.Element => {
     return (
@@ -16,21 +16,8 @@ const Homepage = (): JSX.Element => {
                     </p>
                 </div>
             </div>
-            <div className="homeNav">
-                <p>Learn more</p>
-                <Link
-                    to="./about"
-                    className={(isActive) => (isActive ? 'active' : '')}
-                >
-                    <span className="homeLink">About Me</span>
-                </Link>
-                <p>and see examples of</p>
-                <Link
-                    to="/work"
-                    className={(isActive) => (isActive ? 'active' : '')}
-                >
-                    <span className="homeLink">My Work</span>
-                </Link>
+            <div className="imgBox">
+                <img src={Image} alt="Xarri smiling" />
             </div>
         </div>
     )

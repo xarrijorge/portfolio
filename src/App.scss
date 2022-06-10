@@ -35,24 +35,12 @@ a {
     .highlight {
         color: $accent-color;
     }
-    .homeLink {
-        border-color: $burgundy;
-        color: $dark-color;
-        &:before {
-            background-color: $burgundy;
+    .navIcons {
+        fill: $burgundy;
+        color: $burgundy;
+        & path {
+            stroke: $burgundy;
         }
-        &:hover {
-            color: $burgundy-light;
-        }
-    }
-    .menuHomeLink,
-    .contactLink,
-    .variableLink {
-        color: $dark-color;
-    }
-
-    .navArrow {
-        color: $accent-color;
     }
 }
 .dark-mode {
@@ -61,20 +49,8 @@ a {
     .highlight {
         color: $primary-color;
     }
-    .homeLink {
-        border-color: $primary-color;
-        color: $burgundy-light;
-        &:before {
-            background-color: $primary-color;
-        }
-    }
-    .menuHomeLink,
-    .contactLink,
-    .variableLink {
-        color: $burgundy-light;
-    }
-    .navArrow {
-        color: $primary-color;
+    .imgBox {
+        border-color: $burgundy-light;
     }
 }
 
