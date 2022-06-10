@@ -1,33 +1,38 @@
 .navMenu {
-    position: absolute;
-    width: 100vw;
+    width: 10vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: transparent;
-    & > * {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        font-size: 1rem;
-        text-orientation: sideways;
-    }
-    .homeLink {
-        top: 0;
-        left: 5%;
-    }
-    .contactLink {
-        top: 80%;
-        left: 85%;
-    }
-    .variableLink {
-        top: 80%;
-        left: 5%;
+    position: fixed;
+    left: 0;
+    margin-left: 20px;
+    z-index: 3;
+    // & > * {
+    //     display: flex;
+    //     align-items: center;
+    //     position: absolute;
+    //     font-size: 1rem;
+    //     text-orientation: sideways;
+    // }
+}
+svg.navIcons {
+    width: 2em;
+    height: 2em;
+    margin: 20px 0;
+    fill: $primary-color;
+    & path {
+        stroke: $primary-color;
     }
 }
-.navArrow {
-    margin: 0;
-    padding: 0;
-    font-size: min(80px, 8em);
-    & > path {
-        stroke-width: 10;
-    }
-}
+
+// .navArrow {
+//     margin: 0;
+//     padding: 0;
+//     font-size: min(80px, 8em);
+//     & > path {
+//         stroke-width: 10;
+//     }
+// }

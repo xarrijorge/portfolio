@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { MdHomeFilled } from 'react-icons/md'
+import { MdHomeFilled, MdWork } from 'react-icons/md'
 import { GrContact } from 'react-icons/gr'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Navigation = (): JSX.Element => {
     const location = useLocation()
@@ -16,7 +17,13 @@ const Navigation = (): JSX.Element => {
                 <GrContact className="navIcons" />
             </Link>
             <Link to={locationStr} className="variableLink">
-                <span>{routeName === 'about' ? 'work' : 'about'}</span>
+                <span>
+                    {routeName === 'about' ? (
+                        <MdWork className="navIcons" />
+                    ) : (
+                        <BsFillPersonLinesFill className="navIcons" />
+                    )}
+                </span>
             </Link>
         </div>
     )
