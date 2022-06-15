@@ -22,15 +22,14 @@
     width: 400px;
     height: 600px;
     border: 12px solid $dark-color;
+    overflow: hidden;
+    z-index: 0;
     &:hover {
         width: 450px;
         height: 450px;
         margin: 0;
         padding: 0;
         border-radius: 50%;
-    }
-    &:hover img {
-        transform: translateY(-150px);
     }
 }
 @media screen and (max-width: 920px) {
