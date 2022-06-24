@@ -26,13 +26,15 @@ const Navigation = (): JSX.Element => {
                     showNav === false ? 'hidenav' : 'shownav'
                 }`}
             >
-                <Link to="/" className="homeLink">
+                <Link to="/" className="navItem homeLink">
                     <MdHomeFilled className="navIcons" />
+                    <span className='navtext'>Home</span>
                 </Link>
-                <Link to="/contact" className="contactLink">
+                <Link to="/contact" className="navItem contactLink">
                     <GrContact className="navIcons" />
+                    <span className='navtext'>Contact</span>
                 </Link>
-                <Link to={locationStr} className="variableLink">
+                <Link to={locationStr} className="navItem variableLink">
                     <span>
                         {routeName === 'about' ? (
                             <MdWork className="navIcons" />
@@ -40,6 +42,7 @@ const Navigation = (): JSX.Element => {
                             <BsFillPersonLinesFill className="navIcons" />
                         )}
                     </span>
+                    <span className='navtext'>{routeName === 'about' ? 'Work' : 'About'}</span>
                 </Link>
             </div>
         </>

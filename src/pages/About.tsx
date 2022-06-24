@@ -7,10 +7,10 @@ const About = (): JSX.Element => (
         <div className="title">
             <h1 className="mainTitle">AbOut Me</h1>
             <h4 className="highlight">
-                I'm Xarri. A Developer, maker and problem solver
+                I'm Xarri. A Developer, <br/>maker and problem solver
             </h4>
             <div className="details">
-                <p className="bio">
+                <p >
                     I love what I do and I especially enjoy the process of
                     taking a design project and coding it from concept to
                     completion. I'm passionate about building beautiful,

@@ -24,13 +24,15 @@
     border: 12px solid $dark-color;
     overflow: hidden;
     z-index: 0;
-    &:hover {
-        width: 450px;
-        height: 450px;
-        margin: 0;
-        padding: 0;
-        border-radius: 50%;
-    }
+    display: flex;
+    justify-content: center;
+    // &:hover {
+    //     width: 450px;
+    //     height: 450px;
+    //     margin: 0;
+    //     padding: 0;
+    //     border-radius: 50%;
+    // }
 }
 @media screen and (max-width: 920px) {
     .homepage {
