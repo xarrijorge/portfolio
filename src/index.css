@@ -7,6 +7,11 @@
         url('./fonts/0fddb08144cea533dcd3d39388b7ffbe.svg#GrandSlang Roman')
             format('svg');
 }
+@font-face {
+    font-family: 'Runalto';
+    src: url('./fonts/Runalto.otf'), url('./fonts/Runalto.ttf'),
+        url('./fonts/Runalto.woff');
+}
 
 body {
     margin: 0;

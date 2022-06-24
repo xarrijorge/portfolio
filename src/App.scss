@@ -35,24 +35,15 @@ a {
     .highlight {
         color: $accent-color;
     }
-    .homeLink {
-        border-color: $burgundy;
-        color: $dark-color;
-        &:before {
-            background-color: $burgundy;
-        }
-        &:hover {
-            color: $burgundy-light;
+    .navIcons {
+        fill: $burgundy;
+        color: $burgundy;
+        & path {
+            stroke: $burgundy;
         }
     }
-    .menuHomeLink,
-    .contactLink,
-    .variableLink {
-        color: $dark-color;
-    }
-
-    .navArrow {
-        color: $accent-color;
+    .navtext{
+        color: $burgundy;
     }
 }
 .dark-mode {
@@ -61,36 +52,25 @@ a {
     .highlight {
         color: $primary-color;
     }
-    .homeLink {
-        border-color: $primary-color;
-        color: $burgundy-light;
-        &:before {
-            background-color: $primary-color;
-        }
-    }
-    .menuHomeLink,
-    .contactLink,
-    .variableLink {
-        color: $burgundy-light;
-    }
-    .navArrow {
-        color: $primary-color;
+    .imgBox {
+        border-color: $burgundy-light;
     }
 }
 
 .themeSwitchButton {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     border: none;
     position: fixed;
     top: 0;
     right: 0;
-    margin: 5px;
+    margin: 25px;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
 }
 .themeSwitchButton:hover {
     cursor: pointer;

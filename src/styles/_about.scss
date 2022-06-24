@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    font-size: calc(16px + 1vw);
     .title {
         width: 70%;
         text-align: left;
@@ -15,38 +16,22 @@
         .mainTitle {
             z-index: 2;
             font-size: clamp(36px, 14vmin, 8rem);
-        }
-        .subTitle {
-            font-size: 16px;
-            transition: none;
-            width: 60%;
-            // width: 60%;
-            a.email {
-                color: $accent-color;
-                font-size: small;
-                &:hover {
-                    text-decoration: line-through;
-                }
-            }
-            .social a {
-                font-size: max(4vmin, 20px);
-                &:hover {
-                    color: $accent-color;
-                }
-            }
+            font-weight: thin;
         }
         .image {
-            aspect-ratio: 0.6663984375;
+            // aspect-ratio: 0.6663984375;
+            // aspect-ratio: 2.2222;
             position: relative;
-            $height: 4em;
+            $height: 15em;
             height: $height;
-            max-width: 100%;
-            margin: 0 -1em;
+            width: 600px;
             border-radius: 10px;
+            text-align: right;
             z-index: 1;
-            filter: grayscale(70%);
+            // filter: grayscale(70%);
             background-image: url('../images/xarri.jpg');
             background-size: contain;
+            background-repeat: no-repeat;
             &:before {
                 content: '';
                 position: absolute;
@@ -64,16 +49,60 @@
             }
         }
     }
+    .highlight {
+        font-size: calc(20px + 1vw);
+        transition: none;
+        line-height: 1.2em;
+        font-weight: 100;
+        width: 80%;
+        margin: 2em 0;
+        a.email {
+            color: $accent-color;
+            font-size: small;
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+        .social a {
+            font-size: max(4vmin, 20px);
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
     .details {
-        width: 40%;
+        width: 80%;
         margin-left: 0;
         align-items: flex-start;
-        margin-left: auto;
-        text-align: justify;
-        font-size: 2vmin;
-        line-height: 1.9em;
+        p {
+            line-height: 1.9em;
+            margin: 20px 0;
+            font-size:calc(6px + 1vw);
+            text-align: justify;
+        }
+        .primaryskill {
+            font-family: cursive;
+            margin: 0 5px;
+        }
+        .skills {
+            font-size: 18px;
+
+            .primaryskill {
+                display: inline;
+                font-size: 1.5em;
+            }
+            .highlight {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .skillsets {
+                margin-bottom: 50px;
+            }
+        }
         .hobbies {
             margin-top: 10px;
+            font-family: 'Grandslam Roman', sans-serif;
         }
     }
     .social {

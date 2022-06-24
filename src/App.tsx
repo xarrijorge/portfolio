@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Work from './pages/Work'
 import NotFound from './pages/NotFound'
+import Navigation from './components/navigation'
 import './App.scss'
 
 function App(): JSX.Element {
@@ -15,11 +16,23 @@ function App(): JSX.Element {
     }
     return (
         <main className={`App ${darkmode ? 'dark-mode' : 'light-mode'} `}>
+            <Navigation />
             <button onClick={toggleTheme} className="themeSwitchButton">
                 {darkmode ? (
-                    <Brightness7Sharp sx={{ color: '#f5f5f5' }} />
+                    <Brightness7Sharp
+                        sx={{
+                            fontSize: '80px',
+                            cursor: 'pointer',
+                        }}
+                    />
                 ) : (
-                    <Brightness4Sharp />
+                    <Brightness4Sharp
+                        sx={{
+                            color: '#f5f5f5',
+                            fontSize: '80px',
+                            cursor: 'pointer',
+                        }}
+                    />
                 )}
             </button>
             <Routes>

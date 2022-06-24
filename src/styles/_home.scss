@@ -1,67 +1,13 @@
 .homepage {
     width: 100vw;
     height: 100vh;
-    padding: 15vh 0;
+    padding: 5vh 0;
     text-align: left;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
-    background-image: url('../images/newLogoDraft.png');
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position-y: 20vh;
-    background-position-x: 20%;
-    .homeNav {
-        margin: 150px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
 
-        .homeLink {
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            letter-spacing: 1px;
-            padding: 20px;
-            margin: 0 20px;
-            transition: color 0s ease-in-out;
-            text-transform: uppercase;
-            position: relative;
-            border-style: solid;
-            border-width: 1px;
-            -moz-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            -webkit-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            -o-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg)
-                5 round;
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                top: 100%;
-                z-index: -1;
-                -webkit-transition: top 0.09s ease-in;
-            }
-            &:hover::before {
-                top: 0;
-            }
-
-            &:hover {
-                -webkit-user-select: none;
-                -webkit-touch-callout: none;
-            }
-        }
-
-        // Adding animation to the buttons
-    }
     .description {
         max-width: 100%;
         width: 40%;
@@ -71,6 +17,22 @@
         font-size: 1em;
         line-height: 1.5em;
     }
+}
+.imgBox {
+    width: 400px;
+    height: 600px;
+    border: 12px solid $dark-color;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    // &:hover {
+    //     width: 450px;
+    //     height: 450px;
+    //     margin: 0;
+    //     padding: 0;
+    //     border-radius: 50%;
+    // }
 }
 @media screen and (max-width: 920px) {
     .homepage {
@@ -105,128 +67,5 @@
             font-size: 1rem;
             line-height: 1.2;
         }
-    }
-}
-
-// Animations for the homepage
-@keyframes bottomright {
-    0% {
-        width: 0;
-        height: 0;
-        padding-top: 0;
-        visibility: visible;
-    }
-    25% {
-        width: 100%;
-        height: 0;
-        padding-top: 0;
-        visibility: visible;
-    }
-    50% {
-        height: 100%;
-        width: 100%;
-        visibility: visible;
-    }
-    75% {
-        visibility: visible;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes revbottomright {
-    0% {
-        width: 100%;
-        height: 100%;
-        visibility: visible;
-    }
-    25% {
-        width: 100%;
-        height: 100%;
-        visibility: visible;
-    }
-    50% {
-        width: 100%;
-        height: 100%;
-        visibility: visible;
-    }
-    75% {
-        width: 100%;
-        height: 0;
-        padding-top: 0;
-        visibility: visible;
-    }
-    100% {
-        width: 0;
-        height: 0;
-        padding-top: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes topleft {
-    0% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
-    }
-    25% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
-    }
-    50% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
-    }
-    75% {
-        width: 100%;
-        height: 0;
-        padding-bottom: 0;
-        visibility: visible;
-    }
-    100% {
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes revtopleft {
-    0% {
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        visibility: visible;
-    }
-    25% {
-        width: 100%;
-        height: 0;
-        padding-bottom: 0;
-        visibility: visible;
-    }
-    50% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
-    }
-    75% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
-    }
-    100% {
-        width: 0;
-        height: 0;
-        padding-bottom: 0;
-        visibility: hidden;
     }
 }
